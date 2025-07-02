@@ -6,6 +6,8 @@ class WordGuesserApp < Sinatra::Base
   enable :sessions
   register Sinatra::Flash
 
+  set :host_authorization, { permitted_hosts: [] }  
+
   before do
     @game = session[:game] || WordGuesserGame.new('')
   end
