@@ -19,7 +19,7 @@ describe WordGuesserGame do
     end
   end
 
-  describe 'guessing', pending: true do
+  describe 'guessing' do #, pending: true do
     context 'correctly' do
       before do
         @game = described_class.new('garply')

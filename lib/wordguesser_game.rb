@@ -9,7 +9,17 @@ class WordGuesserGame
     @guesses =''
     @wrong_guesses = ''
   end
-
+  #vp beginning guess method, may have to move until the end of get_random_word?
+#=begin
+  def guess(letter)
+    if (@word.include? letter)
+      @guesses << letter if !(@guesses.include? letter)
+    else
+      @wrong_guesses << letter if !(@wrong_guesses.include? letter)
+    end
+  end
+  #vp end guess method
+#=end
   # You can test it by installing irb via $ gem install irb
   # and then running $ irb -I. -r app.rb
   # And then in the irb: irb(main):001:0> WordGuesserGame.get_random_word
