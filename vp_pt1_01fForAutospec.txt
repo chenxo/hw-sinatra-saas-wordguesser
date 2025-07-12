@@ -1,0 +1,19 @@
+bundle exec autotest : OUT, bundle exec guard : IN
+    this wouldn't work for autotest *gasp*
+        i noticed in the git repo, the ?codio? or some servicer for the saas book/course updated
+        things recently. and for some time, perhaps long b4 this recent update, 3.3.8 was ruby version.
+
+        i expected some trouble but bundle 'mostly worked.' the thing is, the spec in docs isnt updated
+            at lesat i hope thats all
+
+    spec in docs isnt updated, so instead of autotest i'll be working with Guard and
+        guard and guard-rspec
+
+    i copied my Gemfile to gemini and it quickly diagnosed the problem.
+        yeet
+
+....................................................................................................
+defensive programming or better yet: defensive building from spec
+    the spec is here. still using an rspec file. the command is
+
+    asking gemini for help with Guard vs Autotest startup and basics

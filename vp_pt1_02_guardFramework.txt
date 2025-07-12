@@ -1,0 +1,9 @@
+
+....................................................................................................
+spec/wordguesser_game_spec.rb has 18 test cases
+    i want to understand the project structure between rspec, guard, webmock?
+        ill put this on hold. looking at the repo 'clean copy' before i started working myb useful
+
+....................................................................................................
+
+

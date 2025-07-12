@@ -1,11 +1,13 @@
 class WordGuesserGame
   # add the necessary class methods, attributes, etc. here
   # to make the tests in spec/wordguesser_game_spec.rb pass.
-
+  attr_accessor :word, :guesses, :wrong_guesses
   # Get a word from remote "random word" service
 
   def initialize(word)
     @word = word
+    @guesses =''
+    @wrong_guesses = ''
   end
 
   # You can test it by installing irb via $ gem install irb
@@ -18,6 +20,6 @@ class WordGuesserGame
     uri = URI('http://randomword.saasbook.info/RandomWord')
     Net::HTTP.new('randomword.saasbook.info').start do |http|
       return http.post(uri, "").body
-    end
-  end
-end
+    end #end Net:: ... block
+  end # end get_random_word method
+end # class end

@@ -1,0 +1,11 @@
+class game
+    the class constructor expects 1 argument. it looks like a string
+
+WordGuesserGame instance variables
+    from the describe block, the described class must have the following variables:
+        .word ; a string
+            @word is correct. similarly for @guesses, and @wrong_guesses below
+
+        .guesses ; a string
+
+        .wrong_guesses ; a string
