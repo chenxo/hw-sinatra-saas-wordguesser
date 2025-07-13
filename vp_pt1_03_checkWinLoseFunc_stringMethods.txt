@@ -1,0 +1,40 @@
+return :win, :lose, or :play depending on current game state
+
+a bit in............................................................................................
+i was writing guess, check_win_or_lose, and about to write word_with_guesses
+    reading the spec alone, but things seemed ambigious
+
+    so i was compelled to recall the training; look to the test_file!
+        i can write my code to that guide without worrying about what i would have done different
+....................................................................................................
+early thoughts......................................................................................
+general design
+    words are random draws, probably average less than 10 chars
+    
+    a person gets up to 7 wrong guesses
+        then the...expected average of the max number of guesses
+            haha thats a fun side problem but 'do u wanna play golf or do u wanna....' [newsroom]
+
+        conclude guesses/wrong_guesses are about 10-17 chars
+
+comparing two strings generally (X) comparing two strings specifically (./check)
+    probably good runtime experiments
+        string preprocessing; immediately convert the 'word' to a set
+
+        in-time reduction of the outstanding chars
+            when a right char is guessed, the set to check can be 'shrunk'
+
+logic for each guess *oops looking at wrong func but this is helpful too*
+    check against word, check against guesses/wrong_guesses
+        also the 'do nothing' logic
+
+    logic1 check if its a repeat guess first
+        if so, do nothing
+            if not, append to wrong_guesses if its not in word
+                else append to guesses
+        check guesses against word
+            match return win
+            
+            no match but guesses <7 return play
+            
+            return lose

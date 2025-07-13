@@ -1,0 +1,17 @@
+check_win_or_lose & word_with_guesses...............................................................
+took 2 minutes to finish something i started... 2 days ago l0l
+    maybe the break was productive
+
+
+....................................................................................................
+....................................................................................................
+yep. ok just guess method working with tests.
+    quite fun. mixed bag of i know what i want to say in ruby sometimes, and how is it effective
+
+    some fundamentals
+        null (nil) value checks before any calls, input forcing with ArgumentError
+
+        curious if i can remove some conditionals in favor of just doing the thing
+            ehh maybe
+
+....................................................................................................
